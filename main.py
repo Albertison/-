@@ -26,5 +26,11 @@ def marsian():
         return html_str.read()
 
 
+@app.route('/promotion_image')
+def test():
+    with open("second.html", "r", encoding='utf-8') as strig:
+        return strig.read()
+
+
 if __name__ == "__main__":
     app.run(port=8080, host="127.0.0.1")
